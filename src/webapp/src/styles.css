@@ -1,0 +1,85 @@
+.dashboard{
+    color: #FFFFFF;
+    font-size: 1.55em;
+    font-weight: bold;
+    padding-left: 22px;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+}
+
+#sidebar {
+    width: 10%;
+}
+
+#sidebar .navbar-collapse .navbar-sidenav {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 56px;
+}
+
+#sidebar .navbar-sidenav {
+    height: calc(100vh - 112px);
+}
+
+.sidebaritem{
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#main {
+    width: 90%;
+}
+
+#header {
+    background-color: azure;
+    height: 5%;
+    text-transform: capitalize;
+}
+
+.header {
+    color: #FFFFFF;
+    font-size: 1.5em;
+    position: relative;
+    left: 47%;
+}
+
+#weatherComp {
+    color: #FFF;
+    float: right;
+    position: absolute;
+    right: 15px;
+}
+
+#view {
+    height: 95%;
+    padding: 10px;
+}
+
+#tools {
+    padding: 15px;
+}
+
+.tool {
+    margin: 5px;
+    border: 1px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+.tool-name {
+    font-size: 1.5em;
+}
+
+.tool-body {
+    margin: 5px 5px;
+}
+
+#uxt-value {
+    font-size: 1.2em;
+}
+
+#btn-refresh {
+}
