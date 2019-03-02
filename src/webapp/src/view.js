@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './components/home';
 import Calender from './components/calender';
 import Tools from './components/tools';
+import Todo from "./components/todo";
 
 class View extends React.Component{
     render(){
@@ -24,9 +25,7 @@ class View extends React.Component{
                 );
             case 'todo':
                 return (
-                    <div id='view'>
-
-                    </div>
+                    <Todo/>
                 );
             default:
                 return (

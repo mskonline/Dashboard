@@ -3,7 +3,9 @@ import React from 'react';
 class Calender extends React.Component{
     render(){
         return (
-            <div></div>
+            <div className="container">
+                <input />
+            </div>
         );
     }
 }
