@@ -1,10 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class DatePicker extends React.Component {
-    render() {
-        console.log(this.props.top);
-        console.log(this.props.left);
-
+class DatePicker extends Component {
+    render = () => {
         let style = {
             position: 'absolute',
             backgroundColor: '#1fa4b0',
@@ -12,12 +9,8 @@ class DatePicker extends React.Component {
             left: this.props.left
         };
 
-
-
         return (<div style={style}> Datepicker </div>);
-    }
-
-    render
+    };
 }
 
-export default DatePicker
+export default DatePicker;

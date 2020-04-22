@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Home from '../components/home';
-import Calender from '../components/calender';
-import Tools from '../components/tools';
-import Todo from "../components/todo";
+import Home from '../views/home';
+import Calender from '../views/calender';
+import Tools from '../views/tools';
+import Todo from "../views/todo";
 
 class View extends Component {
     showPage = (view) => {

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Weather from '../components/weather'
+import Weather from '../tools/weather'
 
 class Header extends Component {
     render = () => {

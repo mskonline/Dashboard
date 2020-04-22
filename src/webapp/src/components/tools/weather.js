@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import axios from 'axios';
+import {getWeatherUpdate} from '../../services/app-services';
 
 export default class Weather extends Component{
     constructor(props) {
@@ -22,7 +22,7 @@ export default class Weather extends Component{
     };
 
     fetchDataFromAPI = () => {
-        axios.get('https://api.openweathermap.org/data/2.5/weather?zip=75206,us&APPID=fe68ebb8ef6e83fa4d3208acab2b2d68')
+        getWeatherUpdate()
             .then((response) => {
                 this.update(response.data)
             })

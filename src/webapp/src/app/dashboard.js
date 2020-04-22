@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Sidebar from './sidebar';
-import Header from './header';
-import View from './view';
+import Sidebar from '../components/layout/sidebar';
+import Header from '../components/layout/header';
+import View from '../components/layout/view';
 
 class Dashboard extends Component {
     constructor (props) {
