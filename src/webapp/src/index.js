@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Dashboard from './dashboard';
+import Dashboard from './app/dashboard';
 
 import 'jquery/dist/jquery.min'
 import 'bootstrap/dist/js/bootstrap.bundle.min'

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class Sidebar extends React.Component {
-    handleClick(page){
+class Sidebar extends Component {
+    handleClick = (page) => {
         this.props.pageChange(page);
-    }
+    };
 
-    render() {
+    render = () => {
         const sidebarItems = this.props.pages.map((page) =>
             <li className="nav-item" data-toggle="tooltip" data-placement="right" title={page} key={page}>
                 <a className="nav-link">
@@ -33,7 +33,7 @@ class Sidebar extends React.Component {
                 </nav>
             </div>
         );
-    }
+    };
 };
 
 export default Sidebar;

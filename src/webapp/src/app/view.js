@@ -1,15 +1,11 @@
-import React from 'react';
-import Home from './components/home';
-import Calender from './components/calender';
-import Tools from './components/tools';
-import Todo from "./components/todo";
+import React, {Component} from 'react';
+import Home from '../components/home';
+import Calender from '../components/calender';
+import Tools from '../components/tools';
+import Todo from "../components/todo";
 
-class View extends React.Component{
-    render(){
-        return this.showPage(this.props.page);
-    }
-
-    showPage(view){
+class View extends Component {
+    showPage = (view) => {
         switch (view){
             case 'home':
                 return (
@@ -34,7 +30,11 @@ class View extends React.Component{
                     </div>
                 );
         }
-    }
+    };
+
+    render = () => {
+        return this.showPage(this.props.page);
+    };
 };
 
 export default View;

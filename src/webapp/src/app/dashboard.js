@@ -3,17 +3,17 @@ import Sidebar from './sidebar';
 import Header from './header';
 import View from './view';
 
-export default class Dashboard extends Component{
-    constructor(props){
+class Dashboard extends Component {
+    constructor (props) {
         super(props);
 
         this.pages = ['home', 'calender', 'contacts', 'tools', 'todo'];
         this.state = {
             currentPage : 'home'
         }
-    }
+    };
 
-    render(){
+    render = () => {
         return (
             <div>
                 <div id='container' style={{height : window.innerHeight}}>
@@ -25,5 +25,7 @@ export default class Dashboard extends Component{
                 </div>
             </div>
         );
-    }
+    };
 };
+
+export default Dashboard;

@@ -1,8 +1,8 @@
-import React from 'react';
-import Weather from './components/weather'
+import React, {Component} from 'react';
+import Weather from '../components/weather'
 
-class Header extends React.Component{
-    render(){
+class Header extends Component {
+    render = () => {
         return (
             <div id='header'>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -13,7 +13,7 @@ class Header extends React.Component{
                 </nav>
             </div>
         );
-    }
+    };
 };
 
 export default Header;
