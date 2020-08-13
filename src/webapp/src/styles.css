@@ -97,6 +97,12 @@
     text-align: center;
 }
 
+.nav-btn {
+    width: 15%;
+    display: inline-block;
+    height: 30px;
+}
+
 .week-header {
     margin-top: 25px;
     margin-bottom: 10px;
@@ -106,13 +112,39 @@
     margin-top: 5px;
 }
 
-.day {
+.day, .day-null {
     display: inline-block;
-    height: 20px;
+    height: 32px;
     width: 32px;
-    text-align: right;
+    text-align: center;
+}
+
+.day:hover {
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #005cbf;
 }
 
 .week:last-child {
     margin-right: 5px;
+}
+
+.three-months {
+    width: max-content;
+}
+
+.three-months-body {
+    display: inline-flex;
+}
+
+.three-months-btn-left {
+    margin-left: 10px;
+}
+
+.three-months-btn-right {
+    margin-right: 10px;
 }
